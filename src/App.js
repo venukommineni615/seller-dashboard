@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import Form from './components/Form'
 import './App.css';
+import ElectronicItems from './components/Filter-components/ElectronicItems';
+import FoodItems from './components/Filter-components/FoodItems';
+import SkincareItems from './components/Filter-components/SkincareItems';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
+  const [products, setProducts] = useState([]);
+  useEffect(()=>{
+    const localStorageKeys=Object.keys(localStorage)
+    setProducts(localStorageKeys)
+  },[])
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form></Form>
+      <ElectronicItems products={products} setProducts={setProducts}></ElectronicItems>
+      <FoodItems products={products}  setProducts={setProducts}></FoodItems>
+      <SkincareItems products={products}  setProducts={setProducts}></SkincareItems>
     </div>
   );
 }

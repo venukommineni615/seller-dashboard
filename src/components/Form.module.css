@@ -1,0 +1,15 @@
+.form{
+    background-color: grey;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 2px rgb(72, 67, 67);
+    margin: auto;
+    width: fit-content;
+    margin-top: 2rem;
+}
+.input{
+    margin: 1rem;
+    display: flex;
+
+}
