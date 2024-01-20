@@ -1,15 +1,37 @@
 .form{
-    background-color: grey;
+    background-color: rgb(186, 178, 178);
     padding: 1rem;
-    border: 1px solid black;
+    border: 1px solid rgb(135, 132, 132);
     border-radius: 10px;
-    box-shadow: 4px 4px 4px 2px rgb(72, 67, 67);
+    box-shadow: 1px 1px 8px 2px rgb(148, 145, 145) ;
     margin: auto;
     width: fit-content;
     margin-top: 2rem;
 }
-.input{
+.input_div{
     margin: 1rem;
     display: flex;
+    justify-content: space-between;
 
+}
+.input{
+    margin-left: 4rem;
+    border:1px solid rgb(130, 127, 127);
+    padding: 0.5rem;
+    border-radius: 4px 4px;
+    background-color: rgb(241, 233, 222);
+}
+.input:focus{
+    border: 1px solid rgb(33, 28, 28);
+    outline: none;
+}
+.button{
+    padding: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 4px;
+    background-color: rgb(236, 219, 197);
+    border: 1px solid rgb(141, 138, 134);
+    box-shadow: 0.5px 0.5px 6px 0.5px rgb(154, 151, 148);
+    font-weight: 400;
+    font-size: medium;
 }

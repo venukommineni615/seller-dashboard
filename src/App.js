@@ -15,7 +15,7 @@ function App() {
   
   return (
     <div className="App">
-      <Form></Form>
+      <Form setProducts={setProducts}></Form>
       <ElectronicItems products={products} setProducts={setProducts}></ElectronicItems>
       <FoodItems products={products}  setProducts={setProducts}></FoodItems>
       <SkincareItems products={products}  setProducts={setProducts}></SkincareItems>

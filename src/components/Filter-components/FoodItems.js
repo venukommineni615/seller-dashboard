@@ -11,7 +11,7 @@ const FoodItems=(props)=>{
     }
     return(
         <>
-            <h2>Food Items</h2>
+            <h3>Food Items</h3>
             <ul>
             {foodItmes.map((key)=>{
                     return (<li id={key} key={key}>{JSON.parse(localStorage.getItem(key)).name}-{JSON.parse(localStorage.getItem(key)).price}-{JSON.parse(localStorage.getItem(key)).category} <button onClick={deleteProduct}>Remove</button></li>)

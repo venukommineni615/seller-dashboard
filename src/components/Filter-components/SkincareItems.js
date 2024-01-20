@@ -11,7 +11,7 @@ const SkincareItems=(props)=>{
     }
     return(
         <>
-            <h2>Skincare Items</h2>
+            <h3>Skincare Items</h3>
             <ul>
             {skincareItems.map((key)=>{
                     return (<li id={key} key={key}>{JSON.parse(localStorage.getItem(key)).name}-{JSON.parse(localStorage.getItem(key)).price}-{JSON.parse(localStorage.getItem(key)).category} <button onClick={deleteProduct}>Remove</button></li>)
